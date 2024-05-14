@@ -1,0 +1,168 @@
+<html>
+    <head>
+        <style type="text/css">
+
+    #topicos { 
+    border: 15px; /* defina uma borda de um elemento */
+     margin: 20px; /* defina uma margem externa para o elemento */
+    text-align: center; /* defina a posicao do texto */
+    padding: 50px; /* Espaçamento interno */
+    background-color: rgb(92, 185, 232) ; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    box-shadow: 0 4px 6px rgb(0, 0, 0.2); /* adicione uma sombra para o elemento */
+    font-size: 70px; /* Tamanho da fonte */
+    border-radius: 10px; /* Cantos arredondados */
+}
+
+    #botaotopicos {
+    background-color: #0066ff; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 15px 18x; /* Espaçamento interno */
+    font-size: 18px; /* Tamanho da fonte */
+    border: none; /* Remover borda */
+    border-radius: 10px; /* Cantos arredondados */
+    cursor: pointer ; /* Cursor do mouse */
+    position: absolute; 
+    bottom: 78%; /* distancia em relacao a parte inferior*/ 
+    left:30px; /* distancia em relacao a parte esquerda*/
+    ;
+}   
+    
+#botaotexto {
+    background-color: #0066ff; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 15px 15px; /* Espaçamento interno */
+    font-size: 20px; /* Tamanho da fonte */
+    border: none; /* Remover borda */
+    border-radius: 10px; /* Cantos arredondados */
+    cursor: pointer ; /* Cursor do mouse */
+    
+}     
+
+    table {
+    border: 0; /* tamnanho da borda */ 
+    font-size:28; /* tamnanho da letra */ 
+    background-color:white; /* Cor de fundo */
+    border-radius: 10px; /* Cantos arredondados */
+    
+}
+    #legenda {
+    font-size: 15;    
+    font-family: "Helvetica Neue";
+
+}  
+    #titulotabela{
+    font-size: 70px; 
+}
+    #subtitulotabela{
+    font-size: 50px; 
+} 
+ 
+    input[type=botao] {
+    background:image(autofalante.png) none;
+    text-indent:-9999px;
+    width:109px;
+    height:41px;
+}
+     </style>
+    </head>
+    <body>
+        
+   
+    <table id="tabela" align="center" >
+        
+        <tr>
+            <tr>
+                <td id="titulotabela" colspan="2" align="center"> História da sustentabilidade </td>
+            </tr> 
+        <tr>         
+            <td> 
+                <p>
+                   <br> 
+                   &nbsp;&nbsp;No mesmo ano, O Pacto Global foi adotado pela ONU, que consistia em uma adesão
+                   voluntária com o intuito de influenciar e encorajar empresas do mundo todo a adotar
+                   medidas de responsabilidade socioambiental nas áreas de trabalho, direitos humanos e
+                   meio ambiente.
+                </p>                
+            </td>
+        </tr>    
+        <tr>
+            <td colspan="2" align="center"> 
+                <img src="tripe2.png" width="600" height="450"> <div id="legenda"> [S.I.: s.n] </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <p>
+                    &nbsp;&nbsp;Entre os anos 2004 e 2006, A ESG lançada pela parceria entre o Pacto Global e o Banco
+                    Mundial, propôs integrar fatores sociais e ambientais no mercado de capitais, abrindo assim
+                    umespaço para a PRI (Príncipio para o Investimento Responsável) que busca orientar os
+                    investidores sobre incorporar os temas ESG.
+                </p>
+                <p>
+                    &nbsp;&nbsp;Após a integração e conscientização dos fatores socioambientais, houve um crescimento
+                    exponencial na inclusão de políticas que contribuíssem para que a sustentabilidade fosse
+                    incorporada por meio de empresas que atualmente buscam diferenciar seu espaço de forma
+                    sustentável, na tentativa de diminuir os impactos desiguais da relação do ser humano com
+                    a natureza.
+                </p>
+            </td>
+        </tr> 
+        <TR>
+            <TD colspan="2" align="center">
+              <br>  <img src="mundoazul.png" width="600" height="450"> <div id="legenda"> [S.I.: s.n] </div>
+            </TD>
+            <TD>
+                
+                
+            </TD>     
+        </TR>
+
+         <tr>
+            <td>
+                <button id="botaotexto" onclick="lerarea ('tabela')"><img src="autofalante.png" height="50" width="50"></button>
+            </td>
+         </tr>      
+    </table>
+    <table align="center"> 
+        <tr>
+            <td>
+               <a href="historia da sustentabilidade.html"> <img src="seta esquerda.png" width="50px" height="50px">  </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+            </td>
+            <td>
+               <a href="APS.html"> <img src="menu.png" width="50px" height="50px"> </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            </td>
+            <td>
+                <a href="Nestlé.html"> <img src="seta direita.png" width="50px" height="50px"> </a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center"> 2 </td>
+        </tr>
+    </table>
+    
+    
+     <!--NÃO MEXA apartir daqui e comando do leitor NÃO MEXA-->  
+     <script>
+        function lerarea(id) {
+            var texto = document.getElementById(id).innerText;
+            var utterance = new SpeechSynthesisUtterance(texto);
+            
+            // Define a voz para português do Brasil
+            var voices = window.speechSynthesis.getVoices();
+            var vozBrasil;
+            voices.forEach(function(voice) {
+                if(voice.lang === 'pt-BR') {
+                    vozBrasil = voice;
+                }
+            });
+            utterance.voice = vozBrasil;
+
+            window.speechSynthesis.speak(utterance);
+        }
+        
+    </script>
+    </body>
+
+
+</html>

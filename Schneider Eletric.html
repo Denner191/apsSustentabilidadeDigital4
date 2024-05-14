@@ -1,0 +1,189 @@
+<html>
+    <head>
+        <style type="text/css">
+
+    #topicos { 
+    border: 15px; /* defina uma borda de um elemento */
+     margin: 20px; /* defina uma margem externa para o elemento */
+    text-align: center; /* defina a posicao do texto */
+    padding: 50px; /* Espaçamento interno */
+    background-color: rgb(92, 185, 232) ; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    box-shadow: 0 4px 6px rgb(0, 0, 0.2); /* adicione uma sombra para o elemento */
+    font-size: 70px; /* Tamanho da fonte */
+    border-radius: 10px; /* Cantos arredondados */
+}
+
+    #botaotopicos {
+    background-color: #0066ff; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 15px 18x; /* Espaçamento interno */
+    font-size: 18px; /* Tamanho da fonte */
+    border: none; /* Remover borda */
+    border-radius: 10px; /* Cantos arredondados */
+    cursor: pointer ; /* Cursor do mouse */
+    position: absolute; 
+    bottom: 78%; /* distancia em relacao a parte inferior*/ 
+    left:30px; /* distancia em relacao a parte esquerda*/
+    ;
+}   
+    
+#botaotexto {
+    background-color: #0066ff; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 15px 15px; /* Espaçamento interno */
+    font-size: 20px; /* Tamanho da fonte */
+    border: none; /* Remover borda */
+    border-radius: 10px; /* Cantos arredondados */
+    cursor: pointer ; /* Cursor do mouse */
+    
+}     
+
+    table {
+    border: 0; /* tamnanho da borda */ 
+    font-size:28; /* tamnanho da letra */ 
+    background-color:white; /* Cor de fundo */
+    border-radius: 10px; /* Cantos arredondados */
+    
+}
+    #legenda {
+    font-size: 15;    
+    font-family: "Helvetica Neue";
+
+}  
+    #titulotabela{
+    font-size: 70px; 
+}
+    #subtitulotabela{
+    font-size: 50px; 
+} 
+ 
+    input[type=botao] {
+    background:image(autofalante.png) none;
+    text-indent:-9999px;
+    width:109px;
+    height:41px;
+}
+     </style>
+    </head>
+    <body>
+        
+   
+    <table id="tabela" align="center" >
+        
+        <tr>
+            <tr>
+                <td id="titulotabela" colspan="2" align="center"> Schneider Eletric</td>
+            </tr> 
+        <tr>         
+            <td> 
+                <p>
+                    <br><br>&nbsp;&nbsp;A Schneider Eletric é um grupo multinacional francês, sua sede é localizada em
+                    Rueil-Malmaison uma ilha da França, foi fundada em 1836 porém só foi incorporada em
+                    1981, está presente em 190 países, com mais de 205 fábricas, mais de 105 mil
+                    funcionários, proporcionando os mais elevados níveis tecnológicos, de acordo com as
+                    principais normas de qualidade e segurança nacionais e internacionais.
+                </p>
+                <p> 
+                    &nbsp;&nbsp;Especializada em gestão de energia elétrica, automoção além disso, está em primeiro lugar
+                    no ranking mundial quando se trata de sustentabilidade.
+                    A empresa francesa busca impactar pessoas e organizações a se tornarem mais eficientes
+                    empról de um mundo mais sustentável, limpo transformando assim ambicões de
+                    sustentabilidade em ações.
+                </p>
+                
+            </td>
+            <td align="center"> 
+             <br>  <img src="LOGONOMEDIFICIL.png"> <DIV id="legenda"> essa imagem representa o logo da empresa
+                - [S.I.: s.n] </DIV>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <p>
+                   <br>  &nbsp;&nbsp; Possui 4 fábricas no território brasileiro, presente há 60 anos, com 11 filiais comerciais, além
+                   de ter 1500 pontos de vendas em todos os estados do país, uma delas é a APC que em
+                   2009 adquiriu a Microsol Tecnologia, empresa com endereço cearense, tal fabricante
+                   brasileira que está funcionando há mais de 26 anos, fabrica no-breaks, estabilizadores e
+                   acessórios para proteção de energia com um faturamento exponencial em 2008 de US$ 47
+                   milhões. Em 2011 efetuou a aquisição do Grupo Steck, especialista em materiais elétricos
+                   que contava com 950 funcionários na época.
+               </p>
+               
+            </td>
+        </tr> 
+        <TR>
+            <TD>
+               <br> <img src="EMPRESA.jpeg" width="600" height="450"> <div id="legenda">essa imagem representa uma das empresas da Schneider Eletric - [S.I.: s.n]  </div>
+            </TD>
+            <TD>
+                <p>
+                    &nbsp;&nbsp;A partir de 2012, a marca Microsol foi totalmente incorporada, sendo que todos seus
+                    produtos agora saem com marca APC, marca usada no Brasil pelo grupo Schneider.
+                    As empresas Telemecanique,Luminous Power Technologies Pvt Ltd, TAC, Square D, Areva
+                    T&D, APC, Federal Pioneer, PDL Group, Pelco, ELAU, BEI Technologies Cimac, invensys,
+                    SolveIT Software, Citect, Clipsal, Merlin Gerin, Merten, Modicon PLC, Nu-Lec e Power
+                    Measurement são subsidiárias da Schneider Eletric, que vendem diversos produtos como
+                    interruptores, tomadas, Incluindo automação predial, domótica, potência crítica e
+                   refrigeração, automoção de rede elétrica, sistemas de segurança industrial e de controle
+                    industrial.
+                </p>
+                
+            </TD>     
+        </TR>
+           <td colspan="2">
+            <p>
+                &nbsp;&nbsp;Seus principais concorrentes são Siemens AG, Eaton, ABB, Inotech, ABB, Rockwell e o
+                Grupo Legrand empresas que também visam formas mais sustentáveis em pról do
+                desenvolvimento científico.
+            </p>
+           </td>
+         <tr>
+            <td>
+                <button id="botaotexto" onclick="lerarea ('tabela')"><img src="autofalante.png" height="50" width="50"></button>
+            </td>
+         </tr>      
+    </table>
+    <table align="center"> 
+        <tr>
+            <td>
+               <a href="Siemens.html"> <img src="seta esquerda.png" width="50px" height="50px">  </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+            </td>
+            <td>
+               <a href="APS.html"> <img src="menu.png" width="50px" height="50px"> </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            </td>
+            <td>
+                <a href="unip.html"> <img src="seta direita.png" width="50px" height="50px"> </a>
+                
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center"> 6 </td>
+        </tr>
+    </table>
+    
+    
+     <!--NÃO MEXA apartir daqui e comando do leitor NÃO MEXA-->  
+     <script>
+        function lerarea(id) {
+            var texto = document.getElementById(id).innerText;
+            var utterance = new SpeechSynthesisUtterance(texto);
+            
+            // Define a voz para português do Brasil
+            var voices = window.speechSynthesis.getVoices();
+            var vozBrasil;
+            voices.forEach(function(voice) {
+                if(voice.lang === 'pt-BR') {
+                    vozBrasil = voice;
+                }
+            });
+            utterance.voice = vozBrasil;
+
+            window.speechSynthesis.speak(utterance);
+        }
+        
+    </script>
+    </body>
+
+
+</html>

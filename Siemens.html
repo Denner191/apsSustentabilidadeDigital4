@@ -1,0 +1,189 @@
+<html>
+    <head>
+        <style type="text/css">
+
+    #topicos { 
+    border: 15px; /* defina uma borda de um elemento */
+     margin: 20px; /* defina uma margem externa para o elemento */
+    text-align: center; /* defina a posicao do texto */
+    padding: 50px; /* Espaçamento interno */
+    background-color: rgb(92, 185, 232) ; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    box-shadow: 0 4px 6px rgb(0, 0, 0.2); /* adicione uma sombra para o elemento */
+    font-size: 70px; /* Tamanho da fonte */
+    border-radius: 10px; /* Cantos arredondados */
+}
+
+    #botaotopicos {
+    background-color: #0066ff; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 15px 18x; /* Espaçamento interno */
+    font-size: 18px; /* Tamanho da fonte */
+    border: none; /* Remover borda */
+    border-radius: 10px; /* Cantos arredondados */
+    cursor: pointer ; /* Cursor do mouse */
+    position: absolute; 
+    bottom: 78%; /* distancia em relacao a parte inferior*/ 
+    left:30px; /* distancia em relacao a parte esquerda*/
+    ;
+}   
+    
+#botaotexto {
+    background-color: #0066ff; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 15px 15px; /* Espaçamento interno */
+    font-size: 20px; /* Tamanho da fonte */
+    border: none; /* Remover borda */
+    border-radius: 10px; /* Cantos arredondados */
+    cursor: pointer ; /* Cursor do mouse */
+    
+}     
+
+    table {
+    border: 0; /* tamnanho da borda */ 
+    font-size:28; /* tamnanho da letra */ 
+    background-color:white; /* Cor de fundo */
+    border-radius: 10px; /* Cantos arredondados */
+    
+}
+    #legenda {
+    font-size: 15;    
+    font-family: "Helvetica Neue";
+
+}  
+    #titulotabela{
+    font-size: 70px; 
+}
+    #subtitulotabela{
+    font-size: 50px; 
+} 
+ 
+    input[type=botao] {
+    background:image(autofalante.png) none;
+    text-indent:-9999px;
+    width:109px;
+    height:41px;
+}
+     </style>
+    </head>
+    <body>
+        
+   
+    <table id="tabela" align="center" >
+        
+        <tr>
+            <tr>
+                <td id="titulotabela" colspan="2" align="center"> Siemens </td>
+            </tr> 
+        <tr>         
+            <td> 
+                <img src="FUNDOAZUL.jpeg" width="650" height="450"> <div id="legenda">essa imagem representa o logo da empresa
+                    - [S.I.: s.n] </div>
+            </td>
+            <td> 
+              <p>
+               <br> &nbsp;&nbsp;A Siemens AG é uma empresa alemã de eletrônica e engenharia elétrica fundada
+                no dia 1 de outubro de 1847, localizada em Berlim, ela foi o maior conglomerado
+                industrial da Europa e um dos maiores do mundo, a empresa possui um total de 15
+                divisões, seus principais setores são, energia, mobilidade, automação industrial e
+                saúde. A Siemens também está envolvida em áreas como infraestrutura urbana,
+                eletrificação, tecnologias de construção e digitalização de edifícios, entre outros,
+                podemos citar alguns, como por exemplo, Gestão de Energia Urbana, Gestão de
+                Tráfego, Tecnologia de Construção e Digitalização de Edifícios. 
+                
+            </p>
+            <p> Com mais de 155 anos de atuação no Brasil, a empresa é líder em automação industrial de software,
+                infraestrutura, tecnologia predial e transportes, e apresenta foco em inovações e
+                desenvolvimentos de produtos e soluções de alta qualidade. Falando de países, a
+                Siemens AG está presente em mais de 190 países e vem crescendo ainda mais. Os
+                principais países nos quais a Siemens tem uma presença significativa incluem:
+                Alemanha, Reino Unido, Índia, China e Estados Unidos.
+            </p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <p> 
+                    <br> &nbsp;&nbsp;A Siemens tem um compromisso com a sustentabilidade em todas as áreas de seu
+                    negócio, ela busca combater as alterações climáticas através de práticas de
+                    produção mais eficientes, investimentos com energias renováveis e soluções
+                    tecnológicas voltadas para a conservação de recursos. Um dos seus principais
+                    objetivos de sustentabilidade são formulados em seu programa, chamado de “Visão
+                    2030”, este programa estabelece metas ambiciosas para contribuir para um futuro
+                    mais sustentável em diversas áreas-chave, para promover a sustentabilidade em
+                    suas operações e produtos, inclui: eficiência energética; energias renováveis;
+                    mobilidade sustentável; gestão de resíduos e reciclagem; etica e responsabilidade
+                    social.
+                </p>
+            </td>
+        </tr> 
+        <TR>
+            <TD><p>
+                <p> 
+                   <br> &nbsp;&nbsp;Para que seus objetivos sejam alcançados com sucesso várias medidas e ações
+                   precisam ser implementadas em diferentes níveis da organização e em colaboração
+                   compartes interessadas externas, aqui vão 7 aspectos necessários: Compromisso
+                   da Alta Administração; Engajamento dos Funcionários; Inovação e Pesquisa;
+                   Colaboração com Parceiros e Fornecedores; Transparência e Responsabilidade;
+                   Incentivos Regulatórios e Econômicos; Inovação em Modelos de Negócios.
+                </p>
+                <p>
+                    &nbsp;&nbsp;Ao abordar esses aspectos de forma holística e colaborativa, a Siemens pode
+                   aumentar suas chances de alcançar com sucesso seus objetivos de
+                   sustentabilidade e contribuir para um futuro mais sustentável e resiliente.
+                </p>
+               
+            </TD>
+            <TD>
+                <img src="siemensempresa.png"> <div id="legenda"> essa imagem representa uma das empresas da Siemens - [S.I.: s.n]</div>
+            </TD>     
+        </TR>
+
+         <tr>
+            <td>
+                <button id="botaotexto" onclick="lerarea ('tabela')"><img src="autofalante.png" height="50" width="50"></button>
+            </td>
+         </tr>      
+    </table>
+    <table align="center"> 
+        <tr>
+            <td>
+               <a href="TESLA.html"> <img src="seta esquerda.png" width="50px" height="50px">  </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+            </td>
+            <td>
+               <a href="APS.html"> <img src="menu.png" width="50px" height="50px"> </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            </td>
+            <td>
+                <a href="Schneider Eletric.html"> <img src="seta direita.png" width="50px" height="50px"> </a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center"> 5 </td>
+        </tr>
+    </table>
+    
+    
+     <!--NÃO MEXA apartir daqui e comando do leitor NÃO MEXA-->  
+     <script>
+        function lerarea(id) {
+            var texto = document.getElementById(id).innerText;
+            var utterance = new SpeechSynthesisUtterance(texto);
+            
+            // Define a voz para português do Brasil
+            var voices = window.speechSynthesis.getVoices();
+            var vozBrasil;
+            voices.forEach(function(voice) {
+                if(voice.lang === 'pt-BR') {
+                    vozBrasil = voice;
+                }
+            });
+            utterance.voice = vozBrasil;
+
+            window.speechSynthesis.speak(utterance);
+        }
+        
+    </script>
+    </body>
+
+
+</html>

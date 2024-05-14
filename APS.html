@@ -1,0 +1,135 @@
+<html lang="pt-br">
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <style type="text/css"> 
+    #titulo
+    {background-color: whitesmoke; 
+    font-weight: bold; /* defina a espessura da fonte */
+    text-align: center; /* defina o alihamento do texto */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Cantos arredondados */
+    box-shadow: 0 2px 4px rgb(0, 0, 0.1); /* adicione uma sombra para o elemento */
+    
+    }
+ 
+    #topicos 
+    {border: 15px; /* defina uma borda de um elemento */
+     margin: 20px; /* defina uma margem externa para o elemento */
+    text-align: center; /* defina a posicao do texto */
+    padding: 50px; /* Espaçamento interno */
+    background-color: rgb(92, 185, 232) ; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    box-shadow: 0 4px 6px rgb(0, 0, 0.2); /* adicione uma sombra para o elemento */
+     font-size: 18px; /* Tamanho da fonte */
+    border-radius: 10px; /* Cantos arredondados */
+    }
+
+    #texto 
+    {background-color: white; /* Cor de fundo */
+    border-radius: 8px; /* Cantos arredondados */   
+    padding: 20px; /* Espaçamento interno */
+      }  
+    
+    button:hover { background-color: #0effff; }
+
+    #botaotexto {
+    background-color: #6004f5; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 20px 30px; /* Espaçamento interno */
+    font-size: 20px; /* Tamanho da fonte */
+    border: none; /* Remover borda */
+    border-radius: 10px; /* Cantos arredondados */
+    cursor: pointer ; /* Cursor do mouse */
+}
+    #botaotopicos {
+    background-color: #0066ff; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 10px 15px; /* Espaçamento interno */
+    font-size: 8px; /* Tamanho da fonte */
+    border: none; /* Remover borda */
+    border-radius: 10px; /* Cantos arredondados */
+    cursor: pointer ; /* Cursor do mouse */
+    position: absolute; 
+    bottom: 74%; /* distancia em relacao a parte inferior*/ 
+    left:30px; /* distancia em relacao a parte esquerda*/
+} 
+    #imagem {
+    ;
+
+
+
+}
+    #fonte{
+    background-color: #a6b2c4; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 15px 15px; /* Espaçamento interno */
+    font-size: 20px; /* Tamanho da fonte */
+    border: none; /* Remover borda */
+    border-radius: 10px; /* Cantos arredondados */
+    cursor: pointer ; /* Cursor do mouse */
+}
+    </style>
+        <title></title>
+    </head>
+    <body> 
+        <h2 id="titulo"> Sustentabilidade digital
+         <h2 id="topicos"> <a href="historia da sustentabilidade.html">  História </a>  &nbsp;&nbsp;&nbsp;&nbsp; <a href="Nestlé.html">Empresas </a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="unip.html">UNIP</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="cop26.html">Eventos Mundiais </a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="nomesalunos.html">Sobre os Alunos </a>
+           </h2>  
+           <button id="botaotopicos" onclick="lerarea ('topicos')"> ler topicos</button>  
+        <br>
+        <br>  
+        <h3 id="texto"> <div  id="area1"> 
+          <center><img src="IMGMENU.jpg" width="650" height="450"></center>  
+            <p> 
+             <br> &nbsp;&nbsp; A sustentabilidade digital é um termo que se refere ao uso 
+               consciente da tecnologia e das tecnologias da informação para reduzir os impactos ambientais e criar soluções sustentáveis.
+               Esse conceito está ligado à ideia de desenvolvimento sustentável, que busca garantir a proteção e preservação do meio ambiente e dos 
+               recursos naturais para as gerações futuras. 
+            </p> 
+            <p>
+                &nbsp;&nbsp;A sustentabilidade digital abrange diversas iniciativas, como o uso de tecnologias que reduzem o consumo de energia, a reciclagem de componentes eletrônicos, 
+               o uso de serviços de hospedagem de sites e dados que são mais eficientes em termos energéticos, entre outras. 
+               Essas medidas são essenciais para reduzir a pegada de carbono causada pelas atividades digitais.</p>
+            <p>
+                &nbsp;&nbsp;Com a crescente necessidade de soluções sustentáveis no mundo empresarial, cada vez mais empresas estão adotando medidas de sustentabilidade 
+               digital em suas operações.
+               Essas ações incluem o uso de energia limpa em data centers, a redução do uso de papel através da digitalização de documentos
+               e a utilização de ferramentas de videoconferência para reduzir as viagens corporativas.
+            </p> 
+            <p align="center">  </p>
+            
+        </div>
+        
+        <button id="botaotexto" onclick="lerarea('area1')"> ler texto </button> 
+        <table align="center">
+                    <tr>
+                        <td id="fonte"> <a href="historia da sustentabilidade.html">Começar leitura pela ordem </a> </td>
+                        
+                 </table> 
+       
+        
+        <!--apartir daqui e comando do leitor-->  
+            <script>
+                function lerarea(id) {
+                    var texto = document.getElementById(id).innerText;
+                    var utterance = new SpeechSynthesisUtterance(texto);
+                    
+                    // Define a voz para português do Brasil
+                    var voices = window.speechSynthesis.getVoices();
+                    var vozBrasil;
+                    voices.forEach(function(voice) {
+                        if(voice.lang === 'pt-BR') {
+                            vozBrasil = voice;
+                        }
+                    });
+                    utterance.voice = vozBrasil;
+        
+                    window.speechSynthesis.speak(utterance);
+                }
+                
+            </script>
+            </h3>
+
+        </body>
+</html>
